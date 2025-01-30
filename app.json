@@ -4,18 +4,21 @@
     "slug": "chat-app",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./assets/images/app-icon.jpeg",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.americanhouse.chatapp",
+      "buildNumber": "2"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
+        "foregroundImage": "./assets/images/app-icon.jpeg",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.americanhouse.chatapp"
     },
     "web": {
       "bundler": "metro",
@@ -27,15 +30,34 @@
       [
         "expo-splash-screen",
         {
-          "image": "./assets/images/splash-icon.png",
+          "image": "./assets/images/app-icon.jpeg",
           "imageWidth": 200,
           "resizeMode": "contain",
           "backgroundColor": "#ffffff"
+        }
+      ],
+      [
+        "expo-notifications",
+        {
+          "icon": "./assets/images/app-icon.jpeg",
+          "color": "#ffffff",
+          "sounds": [
+            "./assets/sounds/notification-sound.mp3"
+          ]
         }
       ]
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "4abf34c4-ee15-4ed4-a4bc-1fa14b71bca4"
+      },
+      "API_URL": "https://chat-app-server-nest-production.up.railway.app"
     }
   }
 }
