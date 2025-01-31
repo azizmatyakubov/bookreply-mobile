@@ -1,63 +1,41 @@
-# compiled output
-/dist
-/node_modules
-/build
+# dependencies
+node_modules/
+.pnp/
+.pnp.js
 
-# Logs
-logs
-*.log
-npm-debug.log*
-pnpm-debug.log*
-yarn-debug.log*
-yarn-error.log*
-lerna-debug.log*
+# testing
+coverage/
 
-# OS
+# Expo
+.expo/
+dist/
+web-build/
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.orig.*
+
+# macOS
 .DS_Store
+*.pem
 
-# Tests
-/coverage
-/.nyc_output
-
-# IDEs and editors
-/.idea
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
-
-# IDE - VSCode
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-
-# dotenv environment variable files
+# debug
+npm-debug.*
+yarn-debug.*
+yarn-error.*
 .env
-.env.development.local
-.env.test.local
-.env.production.local
-.env.local
+.env.*
 
-# temp directory
-.temp
-.tmp
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
 
-# Runtime data
-pids
-*.pid
-*.seed
-*.pid.lock
+# Metro
+.metro-health-check*
 
-
-# Diagnostic reports (https://nodejs.org/api/report.html)
-report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
-
-# Android
-android/app/build
-
-# iOS
-ios/build
+# Build
+build/
